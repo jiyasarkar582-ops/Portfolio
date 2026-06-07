@@ -11,7 +11,10 @@ import {
   Database,
   Cpu,
   Layers,
-  ArrowRight
+  ArrowRight,
+  Users,
+  Globe,
+  Shield
 } from 'lucide-react';
 
 const Github = (props: React.SVGProps<SVGSVGElement> & { size?: number }) => (
@@ -346,6 +349,33 @@ export default function ResumeShowcase() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Leadership & Representation */}
+            <div>
+              <h3 className={styles.columnTitle} style={{ marginBottom: '24px', marginTop: '16px' }}>
+                <Users size={20} style={{ color: 'var(--accent-orange)' }} /> Leadership & Representation
+              </h3>
+              <div className={styles.leadershipList}>
+                <div className={styles.leadershipCard}>
+                  <div className={styles.leadershipBadge}>
+                    <Globe size={20} />
+                  </div>
+                  <div className={styles.leadershipInfo}>
+                    <span className={styles.leadershipTitle}>Ambassador – IIT Kharagpur</span>
+                    <span className={styles.leadershipSubtitle}>Kshitij 2026 (Official Campus Representative)</span>
+                  </div>
+                </div>
+                <div className={styles.leadershipCard}>
+                  <div className={styles.leadershipBadge}>
+                    <Shield size={20} />
+                  </div>
+                  <div className={styles.leadershipInfo}>
+                    <span className={styles.leadershipTitle}>Patriotic Youth Ambassador</span>
+                    <span className={styles.leadershipSubtitle}>Youth Leadership & Advocacy</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
